@@ -211,7 +211,7 @@ body, html {
     #overview {
       @include body-view;
 
-      .main {
+      #main {
         display: flex;
 
         @media screen and (max-width: $break-small) {
@@ -232,6 +232,9 @@ body, html {
     }
 
     #movie-list {
+      //display: inline-block;
+      //max-width: 69%;
+      //width: 100%;
       padding-top: 2rem;
 
       .movie {
@@ -277,6 +280,10 @@ body, html {
     $filter-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 
     #movie-filter {
+      //display: inline-block;
+      //max-width: 20%;
+      //width: 100%;
+      //float: right;
       color: $white;
       font-size: 1.15rem;
       margin-bottom: 2rem;
@@ -315,7 +322,7 @@ body, html {
           margin-top: 0.5rem;
           margin-right: 1rem;
           text-shadow: $filter-shadow;
-          display: flex;
+          //display: flex;
           flex-direction: row;
 
           @media screen and (max-width: $break-small) {
@@ -412,6 +419,9 @@ body, html {
 
 }
 
+.clear-float{
+  clear: right;
+}
 
 $tooltip-width-desktop: 9rem;
 $tooltip-width-mobile: 9rem;
